@@ -118,8 +118,6 @@ nav ul li a:hover {
 
 }
 
-
-
 .home-page-right img {
     border-radius: 50%;
     border: none;
@@ -130,6 +128,22 @@ nav ul li a:hover {
         0 0 3px rgb(255, 255, 255),
         0 0 5px orangered,
         0 0 20px orangered;
+
+}
+@media screen and (max-width: 600px){
+    .home-page{
+        display: block;
+    }
+    .home-page-right{
+        margin: 50px;
+    }
+    .nav-left {
+        font-size: 1rem;
+        size: 20px;
+    }
+    .nav-right ul li{
+        margin: 5px;
+    }
 
 }
 
@@ -158,7 +172,7 @@ main hr {
     border-radius: 10px;
     border: 0.1px solid rgb(180, 175, 173);
     background: linear-gradient(to right, white, white);
-    width: calc(30% - 20px);
+    width: 300px;
     padding: 20px;
     margin: 10px;
     transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
@@ -178,36 +192,7 @@ main hr {
 .css,
 .oops {
     text-align: center;
-    justify-content: center;
-}
-
-@media screen and (min-width: 768px) {
-    .card {
-        width: calc(50% - 20px);
-    }
-
-    .left-box {
-        width: calc(50% - 20px);
-    }
-
-    .right-box {
-        width: calc(50% - 20px);
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .card {
-        width: calc(33.33% - 20px);
-    }
-
-    .left-box {
-        width: calc(33.33% - 20px);
-
-    }
-
-    .right-box {
-        width: calc(33.33% - 20px);
-    }
+    overflow: hidden;
 }
 
 .card p {
@@ -242,7 +227,7 @@ main hr {
     border-radius: 10px;
     border: 0.1px solid rgb(180, 175, 173);
     background: linear-gradient(to right, white, white);
-    width: calc(30% - 20px);
+    width: 400px;
     padding: 20px;
     margin: 20px;
     transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
@@ -301,6 +286,7 @@ main hr {
     /* margin-bottom: 5%;
     margin-left: 10%; */
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
@@ -311,7 +297,7 @@ main hr {
 
 .form-right {
     margin-left: 80px;
-
+    margin-top: 20px;
     padding: 25px;
     border-radius: 20px;
     background: linear-gradient(to right, white, white);
